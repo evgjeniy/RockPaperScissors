@@ -4,8 +4,6 @@ using System.Security.Cryptography;
 using System.Text;
 using ConsoleTables;
 
-/* 1 - */
-
 namespace RockPaperScissors
 {
     static class Program
