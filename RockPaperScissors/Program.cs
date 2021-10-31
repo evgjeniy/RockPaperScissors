@@ -63,7 +63,7 @@ namespace RockPaperScissors
             
             if (choice == "?")
                 Menu.ShowHelpMenu(parameters);
-            else if (int.TryParse(choice, out int userMove) && userMove <= parameters.Length && userMove >= 0)
+            else if (int.TryParse(choice, out int userMove) && userMove >= 0 && userMove <= parameters.Length)
                 Game.PlayGame(parameters, userMove, computerMove, randomKey);
             else
                 Console.WriteLine("Incorrect input");
